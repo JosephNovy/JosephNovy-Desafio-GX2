@@ -4,18 +4,18 @@
 <#assign site_url = htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
 
 <div class="ADTcard">
-	<div class="w-100 ADTcontainer d-flex justify-content-center">
+    <div class="w-100 ADTcontainer d-flex justify-content-center">
         <div class="primary mx-1">
-			<#if entries?has_content>
+	    <#if entries?has_content>
                 <#list entries as entry>
                 <#--Este código fará a captura das informações úteis para a composição do componente -->
-					<#assign EntryId=entry.getEntryId()/>
+		    <#assign EntryId=entry.getEntryId()/>
                     <#assign AssetRenderer=entry.getAssetRenderer()/>
                     <#assign DDMFormFieldValuesMap=AssetRenderer.getDDMFormValuesReader().getDDMFormValues().getDDMFormFieldValuesMap()/>
                     <#assign DDMFormFieldsMap=AssetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true)  />
                     <#assign article =  AssetRenderer.getArticle()/>
                     <#assign urlTitle = article.urlTitle />
-					<#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
+		    <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                     <#-- ----------------------------------------------- -->
                     <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Primário' -->
                         <#if entryCat.getName()?contains('Primário')>
@@ -25,9 +25,9 @@
                                  data-senna-off="true">
                                      <#assign imgField=DDMFormFieldsMap['imagem'].name  />
                                      <#assign img=DDMFormFieldValuesMap[imgField][0].getValue().getString(locale)/>
-                                    <#assign imagem=img?eval/>
-                                    <img class= "w-100" src="${imagem.url}" alt=""/>
-                                    <div class="bannerInformation w-100 position-absolute p-4">
+                                     <#assign imagem=img?eval/>
+                                     <img class= "w-100" src="${imagem.url}" alt=""/>
+                                     <div class="bannerInformation w-100 position-absolute p-4">
                                         <div class="subject-tag">
                                         <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                             <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
@@ -53,7 +53,7 @@
                                             <p class="autor-name mr-2 my-0">
                                                 <#assign autorField=DDMFormFieldsMap['autor'].name  />
                                                 <#assign autor=DDMFormFieldValuesMap[autorField][0].getValue(). getString(locale)/>
-                                                    ${autor}
+                                                ${autor}
                                             </p>
                                             <p class="date my-0">
                                                 <#assign dataField=DDMFormFieldsMap['data'].name  />
@@ -68,14 +68,14 @@
                                         </p>
                                     </div>
                                 </a>
-						    </div>
+			     </div>
                         </#if>
-				    </#list>	     
+		     </#list>	     
                 </#list>
             </#if>
         </div>
         <div class="side-container  d-none d-lg-block d-xl-block">
-		    <div class="secundary mx-1">
+	    <div class="secundary mx-1">
                 <#if entries?has_content>
                     <#list entries as entry>
                     <#--Este código fará a captura das informações úteis para a composição do componente -->
@@ -130,18 +130,18 @@
                     </#list>
                 </#if>
 	        </div>
-		    <div class="tertiary overflow-hidden m-1">
-                <#if entries?has_content>
+		<div class="tertiary overflow-hidden m-1">
+                  <#if entries?has_content>
                     <#list entries as entry>
                     <#--Este código fará a captura das informações úteis para a composição do componente -->
-				        <#assign EntryId=entry.getEntryId()/>
+			<#assign EntryId=entry.getEntryId()/>
                         <#assign AssetRenderer=entry.getAssetRenderer()/>
                         <#assign DDMFormFieldValuesMap=AssetRenderer.getDDMFormValuesReader().getDDMFormValues().getDDMFormFieldValuesMap()/>
                         <#assign DDMFormFieldsMap=AssetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true)  />
                         <#assign article =  AssetRenderer.getArticle()/>
                         <#assign urlTitle = article.urlTitle />
                         <#-- ------------------------------------- -->
-				        <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
+			<#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                          <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Terciário' -->
                             <#if entryCat.getName()?contains('Terciário')>
                                 <div class="tertiaryNews Focus">
@@ -179,7 +179,7 @@
                                             </p>
                                         </div>
                                     </a>
-					            </div>
+				</div>
                             </#if>
                         </#list>
                     </#list>
@@ -189,7 +189,7 @@
     </div>
     <#-- Este Componente irá aparecer apenas quando a pagina estiver com  767px de largura -->
 	<div class="side-container-small overfow-hidden d-flex d-md-none d-lg-none d-xl-none mx-auto mt-1">
-		<div class="secundary overflow-hidden w-50">
+	  <div class="secundary overflow-hidden w-50">
             <#if entries?has_content>
                 <#list entries as entry>
                 <#--Este código fará a captura das informações úteis para a composição do componente -->
@@ -244,8 +244,8 @@
                 </#list>
             </#if>
 	    </div>
-		<div class="tertiary overflow-hidden w-50">
-            <#if entries?has_content>
+	    <div class="tertiary overflow-hidden w-50">
+              <#if entries?has_content>
                 <#list entries as entry>
                 <#--Este código fará a captura das informações úteis para a composição do componente -->
                     <#assign EntryId=entry.getEntryId()/>
@@ -254,8 +254,8 @@
                     <#assign DDMFormFieldsMap=AssetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true)  />
                     <#assign article =  AssetRenderer.getArticle()/>
                     <#assign urlTitle = article.urlTitle />
-                    <#-- ------------------------------------- -->
-				    <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
+                <#-- ------------------------------------- -->
+		    <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                     <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Terciário' -->
                         <#if entryCat.getName()?contains('Terciário')>
                             <div class="tertiaryNews Focus">
@@ -284,7 +284,7 @@
                                                     <span class='cultura-pop p-1 rounded'>${entryCat.getName()}</span>
                                                 </#if>
                                             </#list>
-                                            <#-- ------------------------------------- -->
+                                        <#-- ------------------------------------- -->
                                         </div>
                                         <p class="title font-weight-bold">
                                             <#assign titleField=DDMFormFieldsMap['titulo'].name  />
@@ -293,13 +293,13 @@
                                         </p>
                                     </div>
                                 </a>
-					        </div>
+			    </div>
                         </#if>
                     /#list>
                 </#list>
             </#if>	
-	    </div>
 	</div>
+    </div>
 </div>
 <script>
 Liferay.on('allPortletsReady', () => {
