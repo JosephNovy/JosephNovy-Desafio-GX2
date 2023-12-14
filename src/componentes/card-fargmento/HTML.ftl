@@ -13,12 +13,12 @@
                 </lfr-editable>
                 <lfr-editable id="${cur_numbersCard_index}-desc desc" type="rich-text">
                     <p type="text" type="rich-text" class="text-desc text-truncate" style="font-family:Sans-serif; font-weight: 500;">
-                    This is editable text that I can make bold or italic! 
+                    	This is editable text that I can make bold or italic! 
                     </p>
                 </lfr-editable>
-				<div class=" d-flex justify-content-end p-2 ">
-					<a href="#" class="btn bg-${configuration.buttonColor.cssClass}">${configuration.textoBotao}</a>
-				</div>
+		<div class=" d-flex justify-content-end p-2 ">
+			<a href="#" class="btn bg-${configuration.buttonColor.cssClass}">${configuration.textoBotao}</a>
+		</div>
             </div>	
             <#-- ------------------------------------- -->		
         </div>	
