@@ -11,7 +11,7 @@
 	    <#if entries?has_content>
                 <#list entries as entry>
                 <#--Este código fará a captura das informações úteis para a composição do componente -->
-					<#assign EntryId=entry.getEntryId()/>
+		    <#assign EntryId=entry.getEntryId()/>
                     <#assign AssetRenderer=entry.getAssetRenderer()/>
                     <#assign DDMFormFieldValuesMap=AssetRenderer.getDDMFormValuesReader().getDDMFormValues().getDDMFormFieldValuesMap()/>
                     <#assign DDMFormFieldsMap=AssetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true)  />
