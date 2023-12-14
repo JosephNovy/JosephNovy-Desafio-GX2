@@ -1,0 +1,37 @@
+{
+	"fieldSets": [{
+        "fields":
+        [{
+            "name":"numbersCards",
+            "label":"Número de Cards",
+            "description":"number-cards",
+            "type":"text",
+            "typeOptions":{
+                    "placeholder":"Placeholder"
+            },
+            "dataType":"int",
+            "defaultValue":"1"
+        },
+	    {
+            "name": "buttonColor",
+            "label": "Cor do botão",
+            "type": "colorPalette",
+            "dataType": "object",
+            "defaultValue": {
+            "cssClass": "cdm-laranja",
+            "rgbValue": "rgb(244, 121, 32)"
+            }
+        },
+		{
+            "name": "textoBotao",
+            "label": "Texto do botão",
+            "description": "text",
+            "type": "text",
+            "typeOptions": {
+                "placeholder": "Placeholder"
+            },
+            "dataType": "string",
+            "defaultValue": "Texto"						
+        }]
+	}]
+}

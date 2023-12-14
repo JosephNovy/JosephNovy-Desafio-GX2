@@ -1,0 +1,28 @@
+.fragment_1 {	
+	.card{
+		max-width:300px;
+		height:400px;
+		}
+	.card-body{
+		background-color: var(--clr-orange-light-200);
+		height:280px;
+	    border-radius:30px 30px 0 0;
+		top:5px;
+		position: relative;
+	}
+	.card-img{
+		margin-bottom:-40px;
+		height:280px;	
+	}
+	.text-desc{
+	    height:110px;
+	}
+	:hover{
+	    .card-body{
+		    transform: translatey(-90px)
+	}
+		.card-img{
+		    transition-duration:1s;
+	}	
+	}
+}

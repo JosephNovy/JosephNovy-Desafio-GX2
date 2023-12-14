@@ -1,0 +1,45 @@
+
+.ADTcard-side{
+    width: 100%;
+    height: 100vh;
+	.SideADTcontainer{
+        width: 100%;
+	}
+	.Sideimage{
+	    max-width:250px;
+	    max-height:250px;
+	}
+	.Sidetitle{
+	    font-size: 20px;
+	}
+}
+@media only screen and (max-width: 1150px) { 
+	.Sideimage{
+	    max-width:200px;
+	    max-height:200px;
+	}
+    .Sidetitle{
+	    font-size: 16px;
+	}
+}
+
+.politica{
+	background-color: var(--clr-blue-dark);
+	color: var(--clr-branco);
+}
+.economia{
+	background-color: var(--clr-green-dark);
+	color: var(--clr-branco);
+}
+.esporte{
+	background-color: (--clr-green-light);
+	color: var(--clr-branco);
+}
+.clima{
+	background-color: var(--clr-blue-light);
+	color: var(--clr-branco);
+}
+.cultura-pop{
+	background-color: var(--clr-purple);
+	color: var(--clr-branco);
+}

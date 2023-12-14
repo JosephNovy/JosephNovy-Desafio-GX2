@@ -1,0 +1,52 @@
+{
+	"fieldSets": [
+        {
+            "fields":
+            [
+				{
+                    "name": "textoPrincipal",
+                    "label": "Texto principal",
+                    "description": "text",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "Texto principal"
+                },
+				{
+                    "name": "textoSecundario",
+                    "label": "Texto Secundário",
+                    "description": "text",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "Texto secundário"					
+                },
+				{
+                    "name": "textoBotao",
+                    "label": "Texto do botão",
+                    "description": "text",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "Texto"					
+                },
+				{
+                    "name": "backgroundColor",
+                    "label": "Cor da película do componente",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                    "cssClass": "cdm-verde-escuro",
+                    "rgbValue": "rgb(0, 78, 76)"
+                    }
+                }  
+            ]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+.container-article{
+  	.image-article{
+   		height:400px;
+		width: 400px;
+  }
+	.title{
+		font-size:32px;
+	}
+	.summary{
+		font-size:20px;
+	}
+}
+@media screen and (min-width: 820px) { 
+    .container-article{
+    	max-width: 600px;
+	}
+}

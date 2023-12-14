@@ -1,0 +1,146 @@
+.ADTcard{
+	max-width:100vw;
+    width: 100%;
+	.ADTcontainer{
+        width: 100%;
+	    height:600px;
+        overflow: hidden;
+	}
+    .primary{
+	    width: 600px;
+	    .slick-dots {
+            bottom:-10px;
+	    }
+	    .bannerInformation{
+            top: 400px;
+	        padding: 0 auto;
+	    }
+	    .title{
+	        font-size: 24px;
+	        color: var(--clr-branco);
+	    }
+	    .autor-name{
+	        font-size: 12px;
+	        color:var(--clr-branco)
+	    }
+	    .date{
+	        font-size: 12px;
+	        color:var(--clr-branco);
+	    }
+	    .Focus{
+	        transition:0.3s;
+	    }
+	}
+	    .side-container{
+	        max-width:300px;
+            width: 100%;
+	    .secundary{
+	        max-width: 300px;
+	        height:292px;
+		.slick-dots {
+            bottom: 10px;
+	    }
+	}
+	    .bannerInformation{
+		    top: 150px;
+	    }
+	    .title{
+	        font-size: 12px;
+	        color:var(--clr-branco);
+	    }
+	}
+	.tertiary{
+	    .bannerInformation{
+		    top: 150px;
+		}
+	    .slick-dots {
+        bottom: 25px;
+	    }
+	}
+}
+	    .Focus:hover{
+	    transform:scale(1.05);
+	    }
+	    .politica{
+	        background-color: var(--clr-blue-dark);
+	        color: var(--clr-branco);
+	    }
+	    .economia{
+	        background-color: var(--clr-green-dark);
+	        color: var(--clr-branco);
+	    }
+	    .esporte{
+	        background-color: var(--clr-green-light);
+	        color: var(--clr-branco);
+	    }
+	    .clima{
+	        background-color: var(--clr-blue-light);
+	        color: var(--clr-branco);
+	    }
+	    .cultura-pop{
+	        background-color: var(--clr-purple);
+	        color: var(--clr-branco);
+	    }
+	@media only screen and (max-width: 767px) { 
+        .primary{
+	        height: 500px;
+	        .slick-dots {
+            bottom:-10px;
+	        }
+	    }
+    }
+@media only screen and (max-width: 600px) { 
+	.ADTcontainer{
+	    height:400px;
+	}
+	.primary{
+	    width: 400px;
+	    .bannerInformation{
+            top: 200px;
+	        padding: 0 auto;
+	    }
+	}
+	.bannerInformation{
+        top: 200px;
+	    padding: 0 auto;
+	}
+}
+	.side-container-small{
+		max-width:100vw;
+        width: 600px;
+		height:100%;
+		.secundary{
+	    width: 250px;
+		height:250px;
+		}
+		.tertiary{
+	        width: 250px;
+		    height:250px;
+		}
+		.bannerInformation{
+			top: 110px;
+		}
+		.title{
+	        font-size: 12px;
+	        color:var(--clr-branco);
+	}   
+	}
+
+		@media only screen and (max-width: 602px) { 
+	.side-container-small{
+		max-width:100vw;
+        width: 400px;
+		height:200px;
+		.bannerInformation{
+			top: 20px;
+		}
+		.secundary{
+	        width: 150px;
+		    height: 150px;
+		}
+		.tertiary{
+	        width: 150px;
+		    height: 150px;
+		}	
+		}
+	}

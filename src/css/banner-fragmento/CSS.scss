@@ -1,0 +1,24 @@
+.bannerSelector {
+        background: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5));
+        height: 600px;
+	.texto-principal{
+        font-size: 48px; 
+        color: var(--clr-branco); 
+        font-family: Kaushan Script, cursive;
+	}
+	.texto-secundario{
+        font-size: 24px; 
+        color: var(--clr-branco); 
+        font-family: Kaushan Script, cursive;
+	}
+    .btnLink{
+        background-color: transparent;
+        border-color: var(--clr-branco);
+        color: var(--clr-branco);
+    }
+    .btnLink:hover{
+        background-color: var(--clr-branco);
+        border-color: var(--clr-orange-light);
+        color: var(--clr-orange-light);
+    }
+}

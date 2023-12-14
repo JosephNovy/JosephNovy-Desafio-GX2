@@ -1,0 +1,43 @@
+body{
+    line-height: 1.5;
+}
+
+#heading{
+    background-color: var(--clr-red-light);
+}
+#banner{
+    background-color: var(--clr-red-light);
+}
+.child-menu{
+    list-style-type: none;
+    li{  
+        float: left;
+}
+}
+.menu_item{
+    list-style-type: none;
+}
+.menuLink{
+    color: var(--clr-preto);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+.menuLink:hover{
+    color: var(--clr-branco);
+    text-decoration: none;  
+}
+li a:hover {
+  background-color: var(--clr-preto-dark);
+}
+.logoSite{
+    max-width: 200px;
+    max-height: 150px;
+
+}
+#barraBusca{
+    .form-group-item{
+        margin-bottom: 0px;
+    }
+}

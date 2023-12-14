@@ -1,0 +1,9 @@
+{
+  "contentSubtype" : {
+    "subtypeId" : 43703
+  },
+  "contentType" : {
+    "className" : "com.liferay.journal.model.JournalArticle"
+  },
+  "name" : "Artigos Completos"
+}
