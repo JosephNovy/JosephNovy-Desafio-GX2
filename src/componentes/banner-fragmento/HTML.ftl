@@ -3,8 +3,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <div class="bannerSelector d-flex overflow-hidden banner-selector w-100 justify-content-center" style="background-color:${configuration.backgroundColor.rgbValue}">   
 	<div class="d-flex w-100 mx-auto">
-	    	<div class="banner-info align-self-center ml-2 w-50 pl-4">
-		    	<div class="mx-auto">
+	    	<div class="banner-info align-self-center pl4 w-100">
+		    	<div class=" banner-text mx-auto">
             <#-- Informações de texto do banner -->
                 		<p class="texto-principal">${configuration.textoPrincipal}</p>
                 		<p class="texto-secundario" style="font-size: 24px; color: white; font-family: Helvetica Neue;">${configuration.textoSecundario}</p>
