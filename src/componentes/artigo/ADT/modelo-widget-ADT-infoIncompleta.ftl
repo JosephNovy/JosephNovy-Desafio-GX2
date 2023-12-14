@@ -8,7 +8,7 @@
 	        Noticiais mais recentes:
         </h5>
         <div class="px-2 h-100 my-auto">
-			<#if entries?has_content>
+	    <#if entries?has_content>
                 <#list entries as entry>
                 <#--Este código fará a captura das informações úteis para a composição do componente -->
 					<#assign EntryId=entry.getEntryId()/>
@@ -17,10 +17,10 @@
                     <#assign DDMFormFieldsMap=AssetRenderer.article.DDMStructure.DDMForm.getDDMFormFieldsReferencesMap(true)  />
                     <#assign article =  AssetRenderer.getArticle()/>
                     <#assign urlTitle = article.urlTitle />
-                    <#-- ----------------------------------------------- -->
+                <#-- ----------------------------------------------- -->
                     <#-- Este código irá filtrar os artigos e para que seja disposto os artigos menos o artigo principal da pagina de exibição -->
-					<#if !currentURL?contains(urlTitle)>
-                        <div class=" h-50">
+			<#if !currentURL?contains(urlTitle)>
+                          <div class=" h-50">
                             <a class=" text-decoration-none text-dark position-relative  w-100 h-100" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
                                 <#assign imgField=DDMFormFieldsMap['imagem'].name  />
                                 <#assign img=DDMFormFieldValuesMap[imgField][0].getValue().getString(locale)/>
@@ -46,7 +46,7 @@
                                                 <span class='cultura-pop p-1 rounded shadow'>${entryCat.getName()}</span>
                                             </#if>
                                         </#list>
-                                        <#-- ------------------------------------- -->
+                        	<#-- ------------------------------------- -->
                                     </div>
                                     <p class="Sidetitle font-weight-bold">
                                         <#assign titleField=DDMFormFieldsMap['titulo'].name  />
@@ -55,8 +55,8 @@
                                     </p>
                                 </div>
                             </a>
-						</div>
-					</#if>
+			</div>
+		    </#if>
                 </#list>
             </#if>
         </div>
