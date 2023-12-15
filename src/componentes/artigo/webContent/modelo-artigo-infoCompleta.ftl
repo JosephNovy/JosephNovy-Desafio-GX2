@@ -17,23 +17,24 @@
 				<p class="summary">
 					${textoresumo.getData()}
 				</p>
-    		</#if>	
-		<div class="autor-info d-flex ">
-			<#if (autor.getData())??>
-				<p class="m-0 mr-4">
-					${autor.getData()}
-				</p>
-   			</#if>
-	 		<#if (data.getData())??>
-	  			<p class="m-0">
-	    			${data.getData()}
-				</p>
-   			</#if>
-	 	</div>
+    			</#if>	
+			<div class="autor-info d-flex ">
+				<#if (autor.getData())??>
+					<p class="m-0 mr-4">
+						${autor.getData()}
+					</p>
+   				</#if>
+	 			<#if (data.getData())??>
+	  				<p class="m-0">
+	    					${data.getData()}
+					</p>
+   				</#if>
+	 		</div>
+		</div>
+		<#if (textoprincipal.getData())??>
+			<p>
+	   			${textoprincipal.getData()}
+			</p>
+   		</#if>
 	</div>
-	<#if (textoprincipal.getData())??>
-		<p>
-	   		${textoprincipal.getData()}
-		</p>
-   	</#if>
 </div>
