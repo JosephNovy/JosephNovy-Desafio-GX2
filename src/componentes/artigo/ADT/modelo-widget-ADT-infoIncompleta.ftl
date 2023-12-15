@@ -2,8 +2,8 @@
 
 <#assign AssetCategoryLocalService= serviceLocator.findService("com.liferay.asset.kernel.service.AssetCategoryLocalService")/>
 <#assign site_url = htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
-<div class="ADTcard-side ml-4 d-none d-sm-none d-md-none d-lg-block">
-	<div class="w-100 h-100 SideADTcontainer d-flex justify-content-center row ">
+<div class="ADTcard-side ml-4 h-auto">
+	<div class="w-100 SideADTcontainer d-flex justify-content-center row ">
 	<h5 class="d-none d-sm-block">
 		Noticiais mais recentes:
         </h5>
@@ -20,12 +20,12 @@
                 <#-- ----------------------------------------------- -->
                     <#-- Este código irá filtrar os artigos e para que seja disposto os artigos menos o artigo principal da pagina de exibição -->
 			<#if !currentURL?contains(urlTitle)>
-                          <div>
+                          <div  class=" mb-6">
                             <a class="text-decoration-none text-dark  w-100" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
                                 <#assign imgField=DDMFormFieldsMap['imagem'].name  />
                                 <#assign img=DDMFormFieldValuesMap[imgField][0].getValue().getString(locale)/>
                                 <#assign imagem=img?eval/>
-                                <img class= "h-100 w-100 Sideimage" src="${imagem.url}" alt=""/>
+                                <img class= "w-100 Sideimage" src="${imagem.url}" alt=""/>
                                 <div class="SidebannerInformation w-100 p-0 mt-1">
                                     <div>
                                 <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
