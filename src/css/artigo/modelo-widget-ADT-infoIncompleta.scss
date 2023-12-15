@@ -23,7 +23,18 @@
 	    font-size: 16px;
 	}
 }
-
+@media screen and (max-width: 767px) { 
+	.ADTcard-side{
+		max-width: 100vw;
+		.Sideimage{
+	    max-width:150px;
+	    max-height:150px;
+	}
+    	.noticia-link{
+    		display: flex;
+		}
+	}
+}
 .politica{
 	background-color: var(--clr-blue-dark);
 	color: var(--clr-branco);
