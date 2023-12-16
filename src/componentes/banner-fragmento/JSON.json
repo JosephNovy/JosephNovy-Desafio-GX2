@@ -1,52 +1,114 @@
 {
 	"fieldSets": [
-        {
-            "fields":
-            [
-				{
-                    "name": "textoPrincipal",
-                    "label": "Texto principal",
-                    "description": "text",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
+		{
+            "fields":[
+							{
+                "name": "textoPrincipal",
+                "label": "Texto principal",
+                "description": "text",
+                "type": "text",
+                "typeOptions": {
+                "placeholder": "Placeholder"
                     },
-                    "dataType": "string",
-                    "defaultValue": "Texto principal"
+                "dataType": "string",
+                "defaultValue": "Texto principal"
                 },
-				{
-                    "name": "textoSecundario",
-                    "label": "Texto Secundário",
-                    "description": "text",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
+							{
+                "name": "textoSecundario",
+                "label": "Texto Secundário",
+                "description": "text",
+                "type": "text",
+                "typeOptions": {
+                	"placeholder": "Placeholder"
                     },
-                    "dataType": "string",
-                    "defaultValue": "Texto secundário"					
+                "dataType": "string",
+                "defaultValue": "Texto secundário"
+										
                 },
-				{
-                    "name": "textoBotao",
-                    "label": "Texto do botão",
-                    "description": "text",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
+							   {
+                "name": "textoBotao",
+                "label": "Texto do botão",
+                "description": "text",
+                "type": "text",
+                "typeOptions": {
+                	"placeholder": "Placeholder"
                     },
-                    "dataType": "string",
-                    "defaultValue": "Texto"					
+                "dataType": "string",
+                "defaultValue": "Texto"
+										
                 },
-				{
-                    "name": "backgroundColor",
-                    "label": "Cor da película do componente",
-                    "type": "colorPalette",
-                    "dataType": "object",
-                    "defaultValue": {
-                    "cssClass": "cdm-verde-escuro",
-                    "rgbValue": "rgb(0, 78, 76)"
-                    }
-                }  
-            ]
-		}
-	]
-}
+							  {
+                "name": "backgroundColor",
+                "label": "Cor de fundo do componente",
+                "type": "colorPalette",
+                "dataType": "object",
+                "defaultValue": {
+                "cssClass": "cdm-verde-escuro",
+                "rgbValue": "rgb(0, 78, 76)"
+          	}},
+							  {
+          	"name": "PreenchimentoPelicula",
+          	"label": "Preenchimento superior e inferior da Película",
+          	"description": "Preenchimento superior e inferior da Película",
+          	"type": "select",
+         	 "dataType": "int",
+          	"defaultValue": "0",
+          	"typeOptions": {
+           	 "validValues": [
+              	{
+                	"label": "0",
+                	"value": "0"
+             	},
+              	{
+                	"label": "1",
+                	"value": "4"
+              	},
+              	{
+                	"label": "2",
+                	"value": "8"
+              	},
+              	{
+                	"label": "3",
+                	"value": "16"
+              	},
+              	{
+                	"label": "4",
+                	"value": "24"
+             	},
+              	{
+               		"label": "5",
+                	"value": "48"
+              	},
+              	{
+                	"label": "6",
+                	"value": "72"
+              	},
+              	{
+                	"label": "7",
+                	"value": "96"
+              	},
+              	{
+                	"label": "8",
+                	"value": "120"
+              	},
+              	{
+                	"label": "9",
+                	"value": "144"
+              	},
+              	{
+                	"label": "10",
+                	"value": "160"
+              	}]
+          	}},
+        	{
+          	"name": "peliculaBackgroundColor",
+          	"label": "Cor da película do componente",
+          	"type": "colorPalette",
+          	"dataType": "object",
+          	"defaultValue": {
+           	"cssClass": "cdm-verde-escuro",
+            	"rgbValue": "rgb(0, 78, 76)"
+          	}},    
+              ]
+	}
+]}
