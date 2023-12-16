@@ -3,8 +3,8 @@
 <#assign AssetCategoryLocalService= serviceLocator.findService("com.liferay.asset.kernel.service.AssetCategoryLocalService")/>
 <#assign site_url = htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
 
-<div class="ADTcard">
-    <div class="w-100 ADTcontainer d-flex justify-content-center">
+<div class="ADTcontainer">
+    <div class="w-100 ADTcard d-flex justify-content-center">
         <div class="primary mx-1">
 	    <#if entries?has_content>
                 <#list entries as entry>
