@@ -12,7 +12,7 @@
 	.texto-secundario{
         	font-size: 24px; 
         	color: var(--clr-branco); 
-        	font-family: Kaushan Script, cursive;
+        	font-family: Helvetica Neue;
 	}
     	.btnLink{
         	background-color: transparent;
@@ -24,4 +24,7 @@
         	border-color: var(--clr-orange-light);
         	color: var(--clr-orange-light);
     	}
+	.pelicula{
+	top:0px;
+	}
 }
