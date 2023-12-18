@@ -1,3 +1,4 @@
+<#--Esta estrutura será utilizada quando o artigo for aberto em uma pagina de exibição como artigo principal, contendo todas as informações relevantes para o usuário-->
 <#assign AssetCategoryLocalService= serviceLocator.findService("com.liferay.asset.kernel.service.AssetCategoryLocalService")/>
 <#assign site_url = htmlUtil.escape(layout.getGroup().getDisplayURL(themeDisplay, !layout.isPublicLayout())) />
 <div class="ADTselector mx-auto">
