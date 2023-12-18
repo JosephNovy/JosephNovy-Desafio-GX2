@@ -17,7 +17,7 @@
                     <#assign urlTitle = article.urlTitle />
 		    <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                     <#-- ----------------------------------------------- -->
-                    <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Primário' -->
+                    <#-- Este código irá filtrar os artigos e para que sejam dispostos os artigos com a Tag 'Primário' -->
                         <#if entryCat.getName()?contains('Primário')>
                             <div class="principalNews Focus h-100">
                                 <a class=" text-decoration-none text-dark position-relative  w-100 h-100" 
@@ -87,7 +87,7 @@
                         <#assign urlTitle = article.urlTitle />
                         <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                         <#-- ------------------------------------- -->
-                        <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Secundário' -->
+                        <#-- Este código irá filtrar os artigos e para que sejam dispostoa os artigos com a Tag 'Secundário' -->
                             <#if entryCat.getName()?contains('Secundário')>
                                 <div class="secundaryNews overflow-hidden Focus">
                                     <a class=" text-decoration-none text-dark position-relative   overflow-hidden w-100 h-50" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
@@ -142,7 +142,7 @@
                         <#assign urlTitle = article.urlTitle />
                         <#-- ------------------------------------- -->
 			<#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
-                         <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Terciário' -->
+                         <#-- Este código irá filtrar os artigos e para que sejam dispostos os artigos com a Tag 'Terciário' -->
                             <#if entryCat.getName()?contains('Terciário')>
                                 <div class="tertiaryNews Focus">
                                     <a class=" text-decoration-none text-dark position-relative   overflow-hidden w-100 h-100" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
@@ -201,7 +201,7 @@
                     <#assign urlTitle = article.urlTitle />
                     <#-- ------------------------------------- -->
                     <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
-                    <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Secundário' -->
+                    <#-- Este código irá filtrar os artigos e para que sejam dispostos os artigos com a Tag 'Secundário' -->
                         <#if entryCat.getName()?contains('Secundário')>
                             <div class="secundaryNews overflow-hidden Focus">
                                 <a class=" text-decoration-none text-dark position-relative   overflow-hidden w-100 h-50" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
@@ -256,7 +256,7 @@
                     <#assign urlTitle = article.urlTitle />
                 <#-- ------------------------------------- -->
 		    <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
-                    <#-- Este código irá filtrar os artigos e para que seja disposto os artigos com a Tag 'Terciário' -->
+                    <#-- Este código irá filtrar os artigos e para que sejam dispostos os artigos com a Tag 'Terciário' -->
                         <#if entryCat.getName()?contains('Terciário')>
                             <div class="tertiaryNews Focus">
                                 <a class=" text-decoration-none text-dark position-relative   overflow-hidden w-100 h-100" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
