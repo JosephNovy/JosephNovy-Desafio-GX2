@@ -28,7 +28,7 @@
                                 <img class= "w-100 Sideimage" src="${imagem.url}" alt=""/>
                                 <div class="SidebannerInformation w-100 p-0 mt-1">
                                     <div>
-                                <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                         <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                             <#if entryCat.getName() = 'Política'>
                                                 <span class='politica p-1 rounded shadow'>${entryCat.getName()}</span>
