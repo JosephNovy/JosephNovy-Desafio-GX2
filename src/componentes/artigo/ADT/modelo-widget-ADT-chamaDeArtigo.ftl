@@ -18,7 +18,7 @@
                     <#assign article =  AssetRenderer.getArticle()/>
                     <#assign urlTitle = article.urlTitle />
                 <#-- ----------------------------------------------- -->
-                    <#-- Este código irá filtrar os artigos e para que seja disposto os artigos menos o artigo principal da pagina de exibição -->
+                    <#-- Este código irá filtrar os artigos para que sejam dispostos os artigos, menos o artigo principal da página de exibição -->
 			<#if !currentURL?contains(urlTitle)>
                           <div  class=" mb-6">
                             <a class="text-decoration-none text-dark  w-100" href="${site_url}/web/guest/-/${urlTitle}" data-senna-off="true">
