@@ -29,7 +29,7 @@
                                      <img class= "w-100" src="${imagem.url}" alt=""/>
                                      <div class="bannerInformation w-100 position-absolute p-4">
                                         <div class="subject-tag">
-                                        <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                        <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                             <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                                 <#if entryCat.getName() = 'Política'>
                                                     <span class='politica p-1 rounded'>${entryCat.getName()}</span>
@@ -97,7 +97,7 @@
                                         <img class= "w-100" src="${imagem.url}" alt=""/>
                                         <div class="bannerInformation w-100 position-absolute p-4">
                                             <div class="subject-tag">
-                                            <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                            <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                                 <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                                     <#if entryCat.getName() = 'Política'>
                                                         <span class='politica p-1 rounded shadow'>${entryCat.getName()}</span>
@@ -152,7 +152,7 @@
                                         <img class= "w-100" src="${imagem.url}" alt=""/>
                                         <div class="bannerInformation w-100 position-absolute p-4">
                                             <div class="subject-tag">
-                                            <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                            <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                                 <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                                     <#if entryCat.getName() = 'Política'>
                                                         <span class='politica p-1 rounded'>${entryCat.getName()}</span>
@@ -211,7 +211,7 @@
                                     <img class= "w-100" src="${imagem.url}" alt=""/>
                                     <div class="bannerInformation w-100 position-absolute p-4">
                                         <div class="subject-tag">
-                                        <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                        <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                             <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                                 <#if entryCat.getName() = 'Política'>
                                                     <span class='politica p-1 rounded'>${entryCat.getName()}</span>
@@ -266,7 +266,7 @@
                                     <img class= "w-100" src="${imagem.url}" alt=""/>
                                     <div class="bannerInformation w-100 position-absolute p-4">
                                         <div class="subject-tag">
-                                        <#--Este código irá capturar as categorias de atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
+                                        <#--Este código irá capturar as categorias atribuidas para o artigo e irá adicionar um CSS exclusivo para cada tag de categoria-->
                                             <#list AssetCategoryLocalService.getEntryCategories(EntryId) as entryCat>
                                                 <#if entryCat.getName() = 'Política'>
                                                     <span class='politica p-1 rounded'>${entryCat.getName()}</span>
